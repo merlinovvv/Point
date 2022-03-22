@@ -257,7 +257,6 @@ header{
     border-top: 19.5px solid transparent;
     border-left: 23px solid rgba(255, 255, 255, 0.411);
     border-bottom: 19.5px solid transparent;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.2) 100%);
 }
 .info__message{
     display: flex;
