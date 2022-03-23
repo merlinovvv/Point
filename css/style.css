@@ -243,8 +243,9 @@ header{
 .button__give-help p:hover{
     color: #2196F3;
 }
-.block__text{
-    margin-bottom: 20px;
+.message__block .block__text{
+    margin: 0 0 20px 0;
+    max-width: 100%;
 }
 .message__delta{
     position: relative;
@@ -268,7 +269,6 @@ header{
     position: relative;
     padding: 73px 58px 61px;
     width: 100%;
-    height: 574px;
     max-width: 304px;
     max-height: 574px;
     align-items: center;
@@ -505,6 +505,7 @@ header{
 .emotion__block{
     display: flex;
     flex-direction: column;
+    margin-bottom: 50px;
 }
 .block__text{
     max-width: 195px;
@@ -515,6 +516,7 @@ header{
     justify-content: space-between;
     align-items: center;
     max-width: 940px;
+    margin-top: 52px;
 }
 .app__text{
     max-width: 528px;
@@ -534,6 +536,7 @@ header{
     padding: 32px 30px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .consul__img{
     margin-bottom: 20px;
@@ -838,4 +841,195 @@ footer .container{
 .footer__language a{
     color:#000000;
     font-weight: 400;
+}
+@media (max-width: 1024px){
+    .container{
+        max-width: 975px;
+    }
+    header{
+        margin-top: 50px;
+    }
+    .area__main{
+        margin-top: 70px;
+    }
+    .text__title h1 {
+        font-size: 34px;
+        line-height: 42px;
+    }
+    .text__title{
+        margin-bottom: 15px;
+    }
+    .text__sub-title h2 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .message__block{
+        padding: 20px 25px;
+    }
+    .block__text p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .button__give-help, .button__give-help:hover{
+        padding: 12px 25px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .area__kyiv-ghost, .area__character, .area__contact{
+        margin-top: 70px;
+    }
+    .content__app{
+        margin-top: 40px;
+    }
+    .content__emotion{
+        grid-template-columns: repeat(auto-fit, 188px);
+    }
+    .consul__img img, .consul__img{
+        max-width: 210px;
+        max-height: 143px;
+    }
+    .app__text {
+        max-width: 420px;
+    }
+    .app__text p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .mobile__call, .mobile__profile{
+        width: 248px;
+        height: 574px;
+    }
+    .mobile__profile{
+        margin-right: 30px;
+    }
+    .family-psy__image, .personal-psy__image, .clinical-psy__image{
+        max-width: 110%;
+        right: 10px;
+    }
+    .way__rope-1{
+        max-width: 180px;
+        left: 10px;
+    }
+    .clinical-psy__image {
+        left: 0px;
+    }
+    .clinical-psy__delta{
+        left: 210px;
+    }
+    .profile__pick p {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .profile__pick{
+        max-width: 304px;
+        max-height: 130.27px;
+        width: 283px;
+        height: 100%;
+        left: -17px;
+        position: absolute;
+    }
+    .content__title h1{
+        font-size: 34px;
+        line-height: 42px;
+    }
+}
+@media (max-width: 920px)
+{
+    .mobile__profile{
+        margin: 0;
+    }
+    .content__psy{
+        flex-direction: column;
+        width: 100%;
+    }
+    .phone__mobile{
+        width: 100%;
+    }
+    .contact__content{
+        height: 100%;
+    }
+    .phone__mobile{
+        justify-content: space-evenly;
+    }
+    .psy__connect{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row-reverse;
+    }
+    .contact-delta{
+        top: -43px;
+        left: 223px;
+        border-left: 13.65px solid transparent;
+        border-right: 13.65px solid transparent;
+        border-bottom: 25px solid rgba(255, 255, 255, 0.4);
+    }
+    .psy__connect{
+        margin-top: 48px;
+    }
+    .connect__link{
+        margin: 0;
+        height: auto;
+    }
+}
+@media(max-width: 768px){
+    .main__enter{
+        flex-direction: column;
+        align-items: center;
+    }
+    .info__text{
+        max-width: 100%;
+    }
+    .message__block{
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+        align-items: center;
+        text-align: center;
+    }
+    .text__title h1 {
+        font-size: 30px;
+        line-height: 38px;
+    }
+    .text__sub-title h2 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .kyiv-ghost__enter .text__title{
+        max-width: 100%;
+    }
+    .kyiv-ghost__enter .text__sub-title{
+        max-width: 100%;
+    }
+    .enter__info{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+    }
+    .enter__image img{
+        width: 100%;
+    }
+    .text__sub-title{
+        margin-bottom: 35px;
+    }
+    .info-delta{
+        top: 0px;
+        left: 30px;
+        border-left: 13.65px solid transparent;
+        border-right: 13.65px solid transparent;
+        border-top: 25px solid rgba(255, 255, 255, 0.4);
+        border-bottom: 0px;
+        position: static;
+    }
+    .info__message{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .kyiv-ghost__enter{
+        flex-direction: column;
+    }
+    .enter__image{
+        bottom: 90px;
+    }
 }
