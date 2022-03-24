@@ -86,7 +86,7 @@ header{
 .telegram__img{
     margin-right: 15px;
 }
-.main__enter, .header, .kyiv-ghost__enter, .character__content{
+.main__enter, .header, .kyiv-ghost__enter, .character__content, .contact__content{
     z-index: 100;
     position: relative;
 }
@@ -842,6 +842,14 @@ footer .container{
     color:#000000;
     font-weight: 400;
 }
+.other-width{
+    display: none;
+}
+.footer__language{
+    display: flex;
+    align-items: center;
+}
+
 @media (max-width: 1024px){
     .container{
         max-width: 975px;
@@ -933,8 +941,8 @@ footer .container{
         line-height: 42px;
     }
 }
-@media (max-width: 920px)
-{
+
+@media (max-width: 920px){
     .mobile__profile{
         margin: 0;
     }
@@ -971,6 +979,7 @@ footer .container{
         height: auto;
     }
 }
+
 @media(max-width: 768px){
     .main__enter{
         flex-direction: column;
@@ -1031,5 +1040,242 @@ footer .container{
     }
     .enter__image{
         bottom: 90px;
+    }
+    .content__emotion {
+        grid-template-columns: repeat(auto-fit, 155px);
+    }
+    .app__text p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .app__text {
+        max-width: 340px;
+    }
+}
+
+@media(max-width: 590px){
+    .area__contact .decoration__block:nth-child(3){
+        left: 169.93px;
+    }
+    .area__contact .decoration__block:nth-child(5){
+        left: -292px;
+    }
+    .phone__mobile{
+        flex-direction: column;
+        align-items: center;
+    }
+    .mobile__call{
+        margin: 0 0 30px ;
+    }
+}
+
+@media(max-width: 480px){
+
+    .area__main .decoration__block:nth-child(1){
+        left: 0;
+    }
+    .area__main .decoration__block:nth-child(2){
+        left: 40px;
+    }
+    .area__main .decoration__block:nth-child(3){
+        left: 44px;
+    }
+    .area__main .decoration__block:nth-child(4){
+        left: 41px;
+    }
+    .area__main .decoration__block:nth-child(5){
+        left: 34px;
+    }
+    .area__main .decoration__block:nth-child(6){
+        left: 11px;
+    }
+
+    .area__kyiv-ghost .decoration__block:nth-child(1){
+        left: 37px;
+    }
+    .area__kyiv-ghost .decoration__block:nth-child(2){
+        left: 77px;
+    }
+
+    .area__character .decoration__block:nth-child(1){
+        left: 37px;
+    }
+    .area__character .decoration__block:nth-child(2){
+        left: 19px;
+    }
+    .area__character .decoration__block:nth-child(3){
+        left: 123px;
+    }
+    .area__character .decoration__block:nth-child(4){
+        left: 159.99px;
+    }
+    .area__character .decoration__block:nth-child(5){
+        left: 6px;
+    }
+
+    .area__contact .decoration__block:nth-child(1){
+        left: 50px;
+    }
+    .area__contact .decoration__block:nth-child(2){
+        left: 50px;
+    }
+    header{
+        margin-top: 40px;
+    }
+    .text__title h1 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .area__main {
+        margin-top: 50px;
+    }
+    .text__title {
+        margin-bottom: 20px;
+    }
+    .message__block {
+        padding: 30px 20px;
+    }
+    .enter__mobile{
+        max-width: 117px;
+        max-height: 221px;
+        padding: 28px 23px 23.5px;
+    }
+    .mobile__logo img, .mobile__logo{
+        max-width: 25px;
+    }
+    .mobile__logo {
+        margin-bottom: 18px;
+    }
+    .mobile__text {
+        font-size: 6px;
+        line-height: 7px;
+        margin-bottom: 23px;
+    }
+    .mobile__img img{
+        max-width: 44px;
+    }
+    .mobile__img {
+        border-radius: 9px;
+        padding: 3px;
+        margin-bottom: 11px;
+    }
+    .micro__btn, .sound__btn, .video__btn, .terminate__btn {
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+        margin-bottom: 2px;
+    }
+    .text-btn p {
+        font-weight: 400;
+        font-size: 3px;
+        line-height: 4px;
+    }
+    .micro__btn img, .sound__btn img, .video__btn img, .terminate__btn img {
+        max-width: 50%;
+    }
+    .mobile__button {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 6px;
+    }
+    .button__micro {
+        left: 2px;
+    }
+    .mobile__terminate, .mobile__img {
+        right: 1px;
+    }
+    .mobile__swipe {
+        border-radius: 3px;
+        max-width: 55px;
+        max-height: 2px;
+        top: 216px;
+    }
+    .area__character{
+        margin-top: 0;
+    }
+    .enter__image img {
+        width: 80%;
+    }
+    .enter__image {
+        bottom: 65px;
+    }
+    .content__text {
+        margin-bottom: 35px;
+    }
+    .content__emotion{
+        display: flex;
+        flex-direction: column;
+    }
+    .emotion__block{
+        flex-direction: row;
+        margin-bottom: 30px;
+    }
+    .block__text{
+        max-width: 100%;
+    }
+    .block__img{
+        margin-right: 18px;
+    }
+    .other-width{
+        display: block;
+    }
+    .app__text{
+        margin-bottom: 20px;
+    }
+    .app__text p {
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .this-width{
+        display: none;
+    }
+    .message__consul{
+        padding: 37px 20px;
+    }
+    .content__title h1 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .other-width{
+        background: none;
+        max-width: 100%;
+    }
+    .connect__message{
+        display: none;
+    }
+    .psy__connect {
+        justify-content: start;
+    }
+    .phone__mobile{
+        flex-direction: row;
+    }
+    .connect__link{
+        height: 120px;
+    }
+    .link__title h1 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .link__text p, .telegram__text {
+        font-size: 14px;
+    }
+    .telegram__text{
+        font-weight: 400;
+    }
+    .telegram__img {
+        margin-right: 5px;
+    }
+    .link__telegram img{
+        max-width: 15.41px
+    }
+    .area__contact{
+        margin-bottom: 50px;
+    }
+    .footer{
+        max-height: 80px;
+    }
+    .language__text{
+        display: none;
     }
 }
