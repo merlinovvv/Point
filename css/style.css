@@ -1210,9 +1210,11 @@ footer .container{
     .emotion__block{
         flex-direction: row;
         margin-bottom: 30px;
+        align-items: center;
     }
     .block__text{
         max-width: 100%;
+        margin: 0 0 0 0;
     }
     .block__img{
         margin-right: 18px;
