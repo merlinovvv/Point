@@ -270,7 +270,7 @@ header{
     margin-right: 15px;
 }
 .main__enter, .header, .kyiv-ghost__enter, .character__content, .contact__content{
-    z-index: 100;
+    z-index: 1;
     position: relative;
 }
 .main__enter, .kyiv-ghost__enter{
