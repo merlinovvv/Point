@@ -269,7 +269,7 @@ header{
 .telegram__img{
     margin-right: 15px;
 }
-.main__enter, .header, .kyiv-ghost__enter, .character__content, .contact__content{
+.main__enter, .kyiv-ghost__enter, .character__content, .contact__content{
     z-index: 1;
     position: relative;
 }
