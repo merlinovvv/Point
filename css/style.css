@@ -225,7 +225,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 .body__page{
     overflow: hidden;
-    position: absolute;
+    position: relative;
 }
 h1{
     font-family: 'Ubuntu', sans-serif;
@@ -269,6 +269,7 @@ header{
 }
 .decoration{
     z-index: 1;
+    position: relative;
 }
 .main__enter, .kyiv-ghost__enter, .character__content, .contact__content, header, footer{
     z-index: 2;
@@ -1165,9 +1166,7 @@ footer .container{
 }
 
 @media(max-width: 768px){
-    body{
-        position: static;
-    }
+
     .main__enter{
         flex-direction: column;
         align-items: center;
