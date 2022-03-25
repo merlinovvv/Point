@@ -210,6 +210,42 @@ header{
     width: 100%;
     margin-right: 23px;
 }
+.area__main .text__title{
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+.area__main .text__title._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+.area__main .text__sub-title{
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0.3s;
+}
+.area__main .text__sub-title._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+.area__main .info__message{
+    transform: translate(120%, 0px);
+    opacity: 0;
+    transition: all 0.8s ease 0.5s;
+}
+.area__main .info__message._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+.enter__mobile{
+    transform: translate(120%, 0px);
+    opacity: 0;
+    transition: all 0.8s ease 0.4s; 
+}
+.enter__mobile._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
 .message__block{
     background: linear-gradient(151.9deg, rgba(255, 255, 255, 0.4) -53.37%, rgba(255, 255, 255, 0.4) 100%, rgba(255, 255, 255, 0.2) 100%);
     backdrop-filter: blur(40px);
