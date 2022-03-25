@@ -1166,6 +1166,7 @@ footer .container{
 @media(max-width: 768px){
     .body__page{
         position: absolute;
+        margin: 0 auto;
     }
     .main__enter{
         flex-direction: column;
