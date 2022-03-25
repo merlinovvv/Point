@@ -273,6 +273,7 @@ header{
 .main__enter, .kyiv-ghost__enter, .character__content, .contact__content, header, footer{
     z-index: 2;
     position: relative;
+    background-color: transparent;
 }
 .main__enter, .kyiv-ghost__enter{
     display: flex;
