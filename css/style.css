@@ -185,21 +185,21 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     opacity: 1;
     transform: translate(0px, 0px);
 }
-.mobile__call{
+.mobile__call, .mobile__call-1{
     transform: translate(-120%, 0px);
     opacity: 0;
     transition: all 0.8s ease 0s;
 }
-.mobile__call._active{
+.mobile__call._active, .mobile__call-1._active{
     opacity: 1;
     transform: translate(0px, 0px);
 }
-.mobile__profile{
+.mobile__profile, .mobile__profile-1{
     transform: translate(-120%, 0px);
     opacity: 0;
     transition: all 0.8s ease 0.5s;
 }
-.mobile__profile._active{
+.mobile__profile._active, .mobile__profile-1._active{
     opacity: 1;
     transform: translate(0px, 0px);
 }
