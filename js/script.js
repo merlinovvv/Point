@@ -18,7 +18,9 @@ if(animItems.length > 0){
             if((scrollY > animItemOffset - animItemPoint) && scrollY < (animItemOffset + animItemHeight)){
                 animItem.classList.add('_active');
             } else {
-                animItem.classList.remove('_active');
+                if(!animItem.classList.contains('_anim-no-hide')){
+                    animItem.classList.remove('_active');
+                }
             }
         }
     }
@@ -31,5 +33,7 @@ if(animItems.length > 0){
             left: rect.left + scrollLeft
         }
     }
-    animOnScroll();
+    setTimeout(() => {
+        animOnScroll(); 
+    }, 300);
 }

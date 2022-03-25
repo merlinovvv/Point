@@ -40,6 +40,189 @@ img{vertical-align: top;position: relative;z-index: 1;}
 
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
+
+/* ANIMATION */
+
+.area__main .text__title{
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+.area__main .text__title._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+.area__main .text__sub-title{
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0.3s;
+}
+.area__main .text__sub-title._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+.area__main .info__message{
+    transform: translate(120%, 0px);
+    opacity: 0;
+    transition: all 0.8s ease 0.7s;
+}
+.area__main .info__message._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+.enter__mobile{
+    transform: translate(120%, 0px);
+    opacity: 0;
+    transition: all 0.8s ease 0.4s; 
+}
+.enter__mobile._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+.area__kyiv-ghost .text__title{
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+.area__kyiv-ghost .text__title._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+.area__kyiv-ghost .text__sub-title{
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0.3s;
+}
+.area__kyiv-ghost .text__sub-title._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+.enter__image{
+    transform: translate(120%, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0.2s;
+}
+.enter__image._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+.area__character .text__title{
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+.area__character .text__title._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+.emotion__block{
+    opacity: 0;
+    transform: translate(0px, -50%);
+    transition: all 0.3s ease 0s;
+}
+.emotion__block._active:nth-child(1){
+    transition: all 0.8s ease 0s;
+    opacity: 1;
+}
+.emotion__block._active:nth-child(2){
+    transition: all 0.8s ease 0.1s;
+    opacity: 1;
+}
+.emotion__block._active:nth-child(3){
+    transition: all 0.8s ease 0.2s;
+    opacity: 1;
+}
+.emotion__block._active:nth-child(4){
+    transition: all 0.8s ease 0.3s;
+    opacity: 1;
+}
+.emotion__block._active:nth-child(5){
+    transition: all 0.8s ease 0.4s;
+    opacity: 1;
+}
+.emotion__block._active:nth-child(6){
+    transition: all 0.8s ease 0.5s;
+    opacity: 1;
+}
+.emotion__block._active:nth-child(7){
+    transition: all 0.8s ease 0.6s;
+    opacity: 1;
+}
+.emotion__block._active:nth-child(8){
+    transition: all 0.8s ease 0.7s;
+    opacity: 1;
+}
+.emotion__block._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.app__text{
+    transform: translate(120%, 0px);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+.app__text._active{
+    opacity: 1;
+    transform: translate(0px, 0px);
+}
+.app__message{
+    transform: translate(120%, 0px);
+    opacity: 0;
+    transition: all 0.8s ease 0.7s;
+}
+.app__message._active{
+    opacity: 1;
+    transform: translate(0px, 0px);
+}
+
+.content__title{
+    transform: translate(-120%, 0px);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+.content__title._active{
+    opacity: 1;
+    transform: translate(0px, 0px);
+}
+.mobile__call{
+    transform: translate(-120%, 0px);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+.mobile__call._active{
+    opacity: 1;
+    transform: translate(0px, 0px);
+}
+.mobile__profile{
+    transform: translate(-120%, 0px);
+    opacity: 0;
+    transition: all 0.8s ease 0.5s;
+}
+.mobile__profile._active{
+    opacity: 1;
+    transform: translate(0px, 0px);
+}
+.connect__message{
+    transform: translate(-120%, 0px);
+    opacity: 0;
+    transition: all 0.8s ease 1s;
+}
+.connect__message._active{
+    opacity: 1;
+    transform: translate(0px, 0px); 
+}
+.connect__link{
+    transform: translate(0px, -120px);
+    opacity: 0;
+    transition: all 0.8s ease 1.5s;
+}
+.connect__link._active{
+    opacity: 1;
+    transform: translate(0px, 0px); 
+}
+/* ANIMATION END */
+
 .body__page{
     overflow: hidden;
     position: relative;
@@ -209,42 +392,6 @@ header{
     max-width: 700px;
     width: 100%;
     margin-right: 23px;
-}
-.area__main .text__title{
-    transform: translate(0px, 120%);
-    opacity: 0;
-    transition: all 0.8s ease 0s;
-}
-.area__main .text__title._active{
-    transform: translate(0px, 0px);
-    opacity: 1;
-}
-.area__main .text__sub-title{
-    transform: translate(0px, 120%);
-    opacity: 0;
-    transition: all 0.8s ease 0.3s;
-}
-.area__main .text__sub-title._active{
-    transform: translate(0px, 0px);
-    opacity: 1;
-}
-.area__main .info__message{
-    transform: translate(120%, 0px);
-    opacity: 0;
-    transition: all 0.8s ease 0.5s;
-}
-.area__main .info__message._active{
-    transform: translate(0px, 0px);
-    opacity: 1;
-}
-.enter__mobile{
-    transform: translate(120%, 0px);
-    opacity: 0;
-    transition: all 0.8s ease 0.4s; 
-}
-.enter__mobile._active{
-    transform: translate(0px, 0px);
-    opacity: 1;
 }
 .message__block{
     background: linear-gradient(151.9deg, rgba(255, 255, 255, 0.4) -53.37%, rgba(255, 255, 255, 0.4) 100%, rgba(255, 255, 255, 0.2) 100%);
