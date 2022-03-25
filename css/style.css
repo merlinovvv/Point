@@ -244,8 +244,6 @@ h2, p, button{
 }
 header{
     margin-top: 76px;
-    position: relative;
-    z-index: 1;
 }
 .header__menu{
     display: flex;
@@ -269,8 +267,11 @@ header{
 .telegram__img{
     margin-right: 15px;
 }
-.main__enter, .kyiv-ghost__enter, .character__content, .contact__content{
+.decoration{
     z-index: 1;
+}
+.main__enter, .kyiv-ghost__enter, .character__content, .contact__content, header, footer{
+    z-index: 2;
     position: relative;
 }
 .main__enter, .kyiv-ghost__enter{
