@@ -285,7 +285,6 @@ header{
     border-radius: 50%;
 }
 .decoration__block{
-    display: block;
     position: absolute;
 }
 .area__main .decoration__block:nth-child(1){
@@ -1164,10 +1163,7 @@ footer .container{
 }
 
 @media(max-width: 768px){
-    .body__page{
-        position: absolute;
-        margin: 0 auto;
-    }
+
     .main__enter{
         flex-direction: column;
         align-items: center;
